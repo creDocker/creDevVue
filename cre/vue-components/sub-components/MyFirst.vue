@@ -1,6 +1,11 @@
 <template>  
-  <div class='elemFirst'>{{msg}}-{{counter}}<button v-on:click="addOne">Add</button>-{{c4uUid}}
-  <slot></slot>
+  <div class='elemFirst'>
+    {{ msg }}-{{ counter }}
+    <button @click="addOne">
+      Add
+    </button>
+    -{{ c4uUid }}
+    <slot />
   </div>
 </template>
  
@@ -15,14 +20,14 @@
   import C4uGlue from "c4u-glue";
  
   export default {
-    props: ['msg'],
+    mixins: [C4uGlue], 
+    props: {msg: {type: String, default: '1st'}},
     data: function() {
            return {
             c4uParentTag: "c4u-also-to-be-defined",
             counter: 0,
             }
         },
-    mixins: [C4uGlue], 
     methods: { 
        // eslint-disable-next-line
        addOne: function(ignoreEvent) {
