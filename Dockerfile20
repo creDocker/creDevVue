@@ -9,6 +9,7 @@ ARG BUILD_TAG=latest
 #ENV DEBIAN_FRONTEND noninteractive
 #ENV INITRD No
 ENV VUE_VERSION 3.11.0
+ENV VUE_CLI_VERSION 4.2.2
 
 LABEL Name="Vue Dev for CRE" \
       CRE=$CRE_VERSION \ 
@@ -67,6 +68,7 @@ RUN npm install --save precss
 #RUN npm install --save core-js@2 # needs version 2 for now (instead of 3)
 RUN npm install --save core-js
 #RUN npm install --save babel-polyfill
+RUN npm install --save lodash
 RUN npm install --save primevue primeicons
 RUN npm install --save c4u-css c4u-glue w4u-io 
 RUN npm-install-peers

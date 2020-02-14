@@ -1,3 +1,3 @@
 #!/usr/bin/env bash 
 
-echo 'Install further node components for wc/js build'
+echo 'No further node components to install for wc/js build'

@@ -1,11 +1,11 @@
 <template>  
-  <div class='elemSecond'>
+  <div class="elemSecond">
     {{ msg }}-{{ counter }}
     <button @click="addOne">
       Add
     </button>
     *{{ c4uUid }} p:{{ c4uParentId }}
-  <slot/>
+    <slot />
   </div>
 </template>
 

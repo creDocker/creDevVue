@@ -1,5 +1,5 @@
 <template>  
-  <div class='elemFirst'>
+  <div class="elemFirst">
     {{ msg }}-{{ counter }}
     <button @click="addOne">
       Add
