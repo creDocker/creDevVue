@@ -49,6 +49,8 @@ prepublish: version patch, then git
 directory structure npm: packages & CamelCase
 node/npm-c:init & node/web-c:init -> cp this into build-c, or if exists copy from /cre/npm-dir
 
+#ts: https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c
+
 
 
 

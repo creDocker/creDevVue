@@ -1,5 +1,5 @@
 # Adapted from 
-FROM tamboraorg/crenode:latest
+FROM tamboraorg/crenode:2018.0
 MAINTAINER Michael Kahle <michael.kahle@yahoo.de>
 
 ARG BUILD_YEAR=2018
@@ -26,6 +26,10 @@ RUN npm install -g typescript ajv webpack && \
     npm install -g vue-template-compiler @vue/cli @vue/cli-service && \    
     npm install -g --save-dev @vue/cli-plugin-babel @vue/cli-plugin-eslint
 #RUN npm install --save-dev @babel/preset-env ## compatibility / useBuiltIns 
+
+RUN npm install -g prettier tslint tslint-config-prettier
+
+
 
 # precss vue-cli-plugin-postcss-precss
 

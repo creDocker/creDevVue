@@ -174,7 +174,7 @@ addWCbuild () {
   npmAddScript -k build3 -v "sed -i -e \"s/${crazy_kebab}/${wc_name}/g\" ./dist/*.*" -f
   npmAddScript -k build4 -v "rename \"s/$crazy_kebab/$wc_name/\" ./dist/*.*" -f
   npmAddScript -k build0 -v "npm run build1 && npm run build2 && npm run build3 && npm run build4" -f
-
+  npmAddScript -k buildts -v "tsc" -f
 }
 
 echo "Build something in sub-directory: $subdir_path, #vue: $vue_number, wc: $wc_name"
