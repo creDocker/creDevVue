@@ -1,5 +1,5 @@
 sut:
-  build: .
+  build: ${IMAGE_NAME}
   command: /cre/tests/dev-vue-test.sh
   volumes:
     - ./tests:/cre/tests
