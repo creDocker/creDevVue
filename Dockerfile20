@@ -24,7 +24,8 @@ COPY cre /cre
 ##VOLUME ["/cre/vue-components" "/cre/web-components"]
 
 RUN npm install -g typescript ajv webpack && \
-    npm install -g vue-template-compiler @vue/cli @vue/cli-service && \    
+    npm install -g vue-template-compiler @vue/cli @vue/cli-service && \   
+    npm install -g @vue/cli-init && \ 
     npm install -g --save-dev @vue/cli-plugin-babel @vue/cli-plugin-eslint
 #RUN npm install --save-dev @babel/preset-env ## compatibility / useBuiltIns 
 
